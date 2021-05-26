@@ -30,6 +30,7 @@ Project 2 is a Deck Building API where the main objective is to create a datebas
 -	Allow to create cards within the system (Admin only).
 -	Allow to collect cards that are in the database.
 -	Allow to trade cards with other users within the system.
+-	
 # To-do list:
 - Allow the admins to upload more then one card at a time.
 - Allow users to battle each other.
@@ -44,28 +45,28 @@ c.	Git pull origin main
 
 # Usage
 With postman, you will be able to send commands to the Deck Building API as follows:
-http://localhost:8080
-POST /users/register: Register as a user using body as an input (“name”: (input name), “pass”: (input password)
-POST /users/login: Login as a user using body as input (“name”: (input name), “pass”: (input password)
-DELETE /users/logout: Logout as user.
-GET /users: View all users in the system.
-GET /decks: View all decks in the system.
-POST /decks: Add card in the deck with form data taking a card’s ID the user has (“cardUuid” : (card’s id)
-GET /decks/user: View decks the user logged in has.
-POST /decks: Create a deck using primaryArchetypes and secondaryArchetype as a form data.  Choose between, Fire, Earth, Wind, or Water.  (“primaryArchetypes”: (Fire, Earth, Wind, or Water) “secondaryArchetype”: (Fire, Earth, Wind, or Water))
-POST /cards: Add card to the system by setting up the body with the following types: 
-POST /cards/new/(card name here): Add card to the collection of the logged in user
-PUT /cards: Change the cards stats base on name, isUnique, attackValue, defenseValue, damageValue, and/or buffValue.  Use Id of the card to pick which card to change.
-GET /cards: View all cards in the system.
-GET /cards?type=(choose type): View all cards based on it’s type
-GET /trade: View all the pending trades.  This will allow the user to see pending trades to trade different cards
-POST /trade/submit: Pick 1 card the user is willing to trade, and 1 card the user wishes to have with the trade based on ID.
-POST /trade/accept: Pick the ID of the trade to exchange the card with the trader.
+- http://localhost:8080
+- POST /users/register: Register as a user using body as an input (“name”: (input name), “pass”: (input password)
+- POST /users/login: Login as a user using body as input (“name”: (input name), “pass”: (input password)
+- DELETE /users/logout: Logout as user.
+- GET /users: View all users in the system.
+- GET /decks: View all decks in the system.
+- POST /decks: Add card in the deck with form data taking a card’s ID the user has (“cardUuid” : (card’s id)
+- GET /decks/user: View decks the user logged in has.
+- POST /decks: Create a deck using primaryArchetypes and secondaryArchetype as a form data.  Choose between, Fire, Earth, Wind, or Water.  (“primaryArchetypes”: (Fire, Earth, Wind, or Water) “secondaryArchetype”: (Fire, Earth, Wind, or Water))
+- POST /cards: Add card to the system by setting up the body with the following types: 
+- POST /cards/new/(card name here): Add card to the collection of the logged in user
+- PUT /cards: Change the cards stats base on name, isUnique, attackValue, defenseValue, damageValue, and/or buffValue.  Use Id of the card to pick which card to change.
+- GET /cards: View all cards in the system.
+- GET /cards?type=(choose type): View all cards based on it’s type
+- GET /trade: View all the pending trades.  This will allow the user to see pending trades to trade different cards
+- POST /trade/submit: Pick 1 card the user is willing to trade, and 1 card the user wishes to have with the trade based on ID.
+- POST /trade/accept: Pick the ID of the trade to exchange the card with the trader.
 
 # Contributors
-Robert Bierly
-Nerijus Gelezinis
-AlbertMagpoc
+- Robert Bierly
+- Nerijus Gelezinis
+- AlbertMagpoc
 
 # License
 This project uses the following license: 
